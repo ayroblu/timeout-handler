@@ -1,5 +1,5 @@
 const assert = require('assert')
-const TimeoutHandler = require('../')
+const TimeoutHandler = require('../src')
 
 describe('Normal get set timeouts and intervals', function(){
   it('should create a timeout and find it in the meta data, but after the timeout is gone it should no longer be in the meta data', function(){
