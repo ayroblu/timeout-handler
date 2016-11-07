@@ -1,0 +1,14 @@
+{
+  "name": "timeout-handler",
+  "version": "1.0.0",
+  "description": "A little wrapper that helps with handling timeouts",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^3.1.2"
+  }
+}
