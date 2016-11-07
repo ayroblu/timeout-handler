@@ -1,14 +1,25 @@
 {
   "name": "timeout-handler",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A little wrapper that helps with handling timeouts",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ayroblu/timeout-handler"
+  },
   "scripts": {
-    "test": "mocha test/*.test.js"
+    "test": "mocha test/*.test.js",
+    "build": "babel src --out-dir lib",
+    "preversion": "npm test",
+    "version": "npm run build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "mocha": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0"
   }
 }
